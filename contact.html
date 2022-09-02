@@ -40,30 +40,43 @@
         <div>
             <h1>Contact</h1>
             <div>
+        <div class="contact-header">
+        <h1>Contact</h1>
+        </div>
+        <div class="contact-info-row">
+            <div class="contact-info-column">
                 John Dussold<br>
                 Shakopee, MN 55379<br>
                 United States<br>
-                <br>
-                Tel <a href="tel:19522615631" aria-label="My telephone number">(952)261-5631</a><br>
-                Skype <a href="live:jdussold">John Dussold</a><br>
-                <a href="mailto:jdussold@gmail.com">jdussold@gmail.com</a><br>
-                <a href="mailto:jdussold@gmail.com">Contact me</a>
             </div>
-            <div>
-                <form action="" method="post" id="contact-form">
-                    <label class="standard-label" for="contact-email">E-mail: </label>
-                    <input type="email" id="contact-email" required>
-
-                    <label class="standard-label" for="telephone-number">Telephone: </label>
-                    <input type="tel" id="telephone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-                    <label class="standard-label" for="message">Message: </label>
-                    <textarea maxlength="240" id="message" required></textarea>
-
-                    <input type="submit" value="Send message">
-                </form>
-            </div>            
+            <div class="contact-info-column">
+                Tel <a href="tel:15555555555" aria-label="My telephone number">(555) 555-5555</a><br>
+                Skype <a href="live:jdussold">John Dussold</a><br>
+                Email <a href="mailto:jdussold@gmail.com">jdussold@gmail.com</a>
+            </div>
         </div>
+        <div>
+            <form action="" method="post" id="contact-form">
+                <div class="email">
+                <label class="standard-label" for="contact-email">E-mail: </label>
+                <input type="email" id="contact-email" required>
+                </div>
+
+                <div class="telephone">
+                <label class="standard-label" for="telephone-number">Telephone: </label>
+                <input type="tel" id="telephone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                </div>
+
+                <div class="message">
+                <label class="standard-label" for="message">Message: </label>
+                <textarea maxlength="240" id="message" required></textarea>
+                </div>
+
+                <div class="contact-submit">
+                <input type="submit" value="Send message">
+                </div>
+            </form>
+        </div>            
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">

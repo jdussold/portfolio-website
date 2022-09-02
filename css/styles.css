@@ -248,6 +248,36 @@ header {
     margin-top: 5%;
 }
 
+.contact-header {
+    margin-top: 5%;
+    text-align: center;
+    animation: 1s ease-in-out 0s 1 slightSlideUp;
+}
+
+.contact-info-row {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-column {
+    margin: 5%;
+    flex-direction: column;    
+}
+
+.email, .telephone, .message, .contact-submit {
+    display: flex;
+    margin: 2% 40%;
+    flex-direction: column;    
+}
+
+textarea {
+    height: 100px;
+}
+
+.contact-submit {
+    margin: 2% 45%;
+}
+
 .page-footer-home {
     clear: both;
     display: flex;
@@ -270,8 +300,8 @@ header {
 }
 
 .work-header {
-    margin: 3%;
-    padding: 80px;
+    margin-top: 5%;
+    padding: 20px;
     text-align: center;
     animation: 1s ease-in-out 0s 1 slightSlideUp;
 }
