@@ -2,15 +2,15 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: last 2 version
 */
 
 /*
 Colors Used
-Text Color (White): #FFF
-Background Color (Maximum Blue): #6AA9BC
-Link Color (Vivid Sky Blue): #0BC6E3
-Button color (Vivid Sky Blue): #0BC6E3
+Text Color (White): #fff
+Background Color (Maximum Blue): #6aa9bc
+Link Color (Vivid Sky Blue): #0bc6e3
+Button color (Vivid Sky Blue): #0bc6e3
 Frame color (Black): #000
 */
 
@@ -18,7 +18,7 @@ Frame color (Black): #000
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 body {
@@ -28,8 +28,12 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: #000;
-    background-color: #FFF;
+    background-color: #fff;
     overflow-y: scroll;
+}
+
+textarea {
+    height: 100px;
 }
 
 h1 {
@@ -49,25 +53,24 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #0BC6E3;
+    color: #0bc6e3;
     font-weight: 700;
     -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #0BC6E3;
-    text-decoration: underline;    
+    color: #0bc6e3;
+    text-decoration: underline;
 }
 
 a:focus {
-    color: #0BC6E3;
-    text-decoration: underline;    
+    color: #0bc6e3;
+    text-decoration: underline;
 }
 
 a:active {
-    color: #0BC6E3
+    color: #0bc6e3;
 }
 
 header {
@@ -96,18 +99,17 @@ header {
 
 .navigation-list li {
     display: inline-block;
-    padding: 0px 20px;
-    color: #FFF;
+    padding: 0 20px;
+    color: #fff;
 }
 
 .navigation-list li a {
     -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
     position: relative;
     padding-bottom: 5px;
     cursor: pointer;
-    color: #FFF;
+    color: #fff;
 }
 
 .navigation-list li a::after {
@@ -116,7 +118,6 @@ header {
     font-size: 1rem;
     top: -3px;
     -webkit-transition: all ease-out 0.3s;
-    -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s;
 }
 
@@ -126,7 +127,6 @@ header {
     font-size: 1rem;
     top: -3px;
     -webkit-transition: all ease-out 0.3s;
-    -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s;
 }
 
@@ -134,7 +134,6 @@ header {
     content: '(';
     left: -0.625rem;
     -webkit-transform: translateX(5px);
-        -ms-transform: translateX(5px);
             transform: translateX(5px);
 }
 
@@ -142,25 +141,29 @@ header {
     content: ')';
     right: -0.625rem;
     -webkit-transform: translateX(-10px);
-        -ms-transform: translateX(-10px);
             transform: translateX(-10px);
 }
 
-.navigation-list li a:hover::after, .navigation-list li a:hover::before {
+.navigation-list li a:hover::after {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.navigation-list li a:hover::before {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .navigation-list li a:hover {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
 }
 
 .navigation-list__item--active {
     padding-bottom: 3px;
-    border-bottom: 2px solid #FFF;
+    border-bottom: 2px solid #fff;
 }
 
 @-webkit-keyframes slideDown {
@@ -168,31 +171,33 @@ header {
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
     }
-  }
+}
 
 @keyframes slideDown {
     0% {
         -webkit-transform: translateY(-100%);
                 transform: translateY(-100%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
     }
-  }
+}
 
 .page-header-home {
-    background-color: #6AA9BC;
+    background-color: #6aa9bc;
     -webkit-animation: 1s ease-in-out 0s 1 slideDown;
-            animation: 1s ease-in-out 0s 1 slideDown;   
-  }
+            animation: 1s ease-in-out 0s 1 slideDown;
+}
 
 .page-header {
-    background-color: #6AA9BC;
+    background-color: #6aa9bc;
 }
 
 @-webkit-keyframes spreadOut {
@@ -201,6 +206,7 @@ header {
                 transform: scaleX(0);
         opacity: 0;
     }
+
     100% {
         -webkit-transform: scaleX(100%);
                 transform: scaleX(100%);
@@ -214,6 +220,7 @@ header {
                 transform: scaleX(0);
         opacity: 0;
     }
+
     100% {
         -webkit-transform: scaleX(100%);
                 transform: scaleX(100%);
@@ -226,6 +233,7 @@ header {
         -webkit-transform: translateY(50%);
                 transform: translateY(50%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -237,6 +245,7 @@ header {
         -webkit-transform: translateY(50%);
                 transform: translateY(50%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -248,6 +257,7 @@ header {
         -webkit-transform: translateY(25%);
                 transform: translateY(25%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -259,6 +269,7 @@ header {
         -webkit-transform: translateY(25%);
                 transform: translateY(25%);
     }
+
     100% {
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -271,7 +282,6 @@ header {
     margin: 0;
     padding: 0;
     border-top: 3px solid #000;
-    
 }
 
 .border {
@@ -280,7 +290,6 @@ header {
     margin: 0;
     padding: 0;
     border-top: 3px solid #000;
-    
 }
 
 .profile {
@@ -318,7 +327,6 @@ header {
     text-align: left;
 }
 
-
 .work-button {
     margin-top: 5%;
 }
@@ -326,23 +334,22 @@ header {
 .button1 {
     padding: 15px 30px;
     border: none;
-    background-color: #0BC6E3;
+    background-color: #0bc6e3;
     -webkit-clip-path: polygon(0 0, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 75%);
             clip-path: polygon(0 0, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 75%);
     font-size: 0.9rem;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all ease-in 0.2s;
-    -o-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
-    color: #FFF;
+    color: #fff;
 }
 
 .button1:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
 }
 
 .resume-button {
@@ -370,10 +377,10 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;    
+            flex-direction: column;
 }
 
-.email, .telephone, .message, .contact-submit {
+.email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,11 +388,40 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;    
+            flex-direction: column;
 }
 
-textarea {
-    height: 100px;
+.telephone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2% 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2% 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.contact-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2% 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .contact-submit {
@@ -431,17 +467,20 @@ textarea {
     -webkit-animation: 1s ease-in-out 0s 1 slightSlideUp;
             animation: 1s ease-in-out 0s 1 slightSlideUp;
 }
+
 /* start grid fallback */
 .project-grid__item {
     display: inline-block;
     width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
     .project-grid {
         display: -ms-grid;
         display: grid;
+
         /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
         -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -450,21 +489,20 @@ textarea {
     }
 
     .project-grid__item {
-        background-color: #6AA9BC;
-        color: #FFF;
+        background-color: #6aa9bc;
+        color: #fff;
         width: auto;
         min-height: auto;
         margin: 0;
     }
 
     .project-grid__item a {
-        color: #FFF;
+        color: #fff;
     }
 
     .project-grid__item a:hover {
         font-weight: bold;
         -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
 
@@ -483,18 +521,34 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
     .project-grid {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media all and (max-width: 750px) {
     .project-grid {
         grid-gap: 10px;
     }
+
     .project-grid__item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
+}
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: linear-gradient(to bottom, white, black);
 }
