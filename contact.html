@@ -8,6 +8,7 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
@@ -37,43 +38,57 @@
             <!-- container for animated header border -->
             <p></p>
         </div>
-        <div class="contact-header">
-        <h1>Contact</h1>
-        </div>
-        <div class="contact-info-row">
-            <div class="contact-info-column">
-                John Dussold<br>
-                Shakopee, MN 55379<br>
-                United States<br>
+        <section class="contact">
+            <div class="content">
+                <h1>Contact Me</h1>
+                <p></p>
             </div>
-            <div class="contact-info-column">
-                Tel <a href="tel:15555555555" aria-label="My telephone number">(555) 555-5555</a><br>
-                Skype <a href="live:jdussold">John Dussold</a><br>
-                Email <a href="mailto:jdussold@gmail.com">jdussold@gmail.com</a>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Shakopee, MN<br>55379</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(952)555-5555</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>jdussold@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="input-box">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea required="required"></textarea>
+                            <span>Type your message...</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div>
-            <form action="#" method="post" id="contact-form">
-                <div class="email">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required>
-                </div>
-
-                <div class="telephone">
-                <label class="standard-label" for="telephone-number">Telephone: </label>
-                <input type="tel" id="telephone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                </div>
-
-                <div class="message">
-                <label class="standard-label" for="message">Message: </label>
-                <textarea maxlength="240" id="message" required></textarea>
-                </div>
-
-                <div class="contact-submit">
-                <input type="submit" value="Send message">
-                </div>
-            </form>
-        </div>            
+        </section>           
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">
