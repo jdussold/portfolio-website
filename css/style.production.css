@@ -588,8 +588,19 @@ header {
     margin-top: 10%;
 }
 
-.social-media {
+.social-media a {
     margin-top: 5px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-media a:active {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .work-header {
