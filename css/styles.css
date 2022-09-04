@@ -459,6 +459,7 @@ header {
 
 .social-media {
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .work-header {
