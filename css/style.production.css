@@ -427,6 +427,21 @@ header {
     font-size: 22px;
 }
 
+.container .contact-info .box .icon a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .contact-info .box .icon a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .contact-info .box .icon a:active {
+    color: #fff;
+    cursor: pointer;
+}
+
 .container .contact-info .box .text {
     display: -webkit-box;
     display: -ms-flexbox;
