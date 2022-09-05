@@ -71,7 +71,9 @@ a:active {
     color: var(--link-color);
 }
 
-header { 
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 5%;
 }
@@ -79,26 +81,24 @@ header {
 .logo {
     cursor: pointer;
     height: 75px;
-    float: left;
 }
 
 .navigation-list {
-    clear: both;
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
 }
 
 .navigation-list li {
-    display: block;
+    display: inline-block;
+    padding: 0 20px;
     color: var(--nav-items-color);
 }
 
 .navigation-list li a {
     transition: all ease 0.3s;
     position: relative;
+    padding-bottom: 5px;
     cursor: pointer;
     color: var(--nav-items-color);
 }
@@ -214,49 +214,6 @@ header {
     margin: 0;
     padding: 0;
     border-top: 3px solid var(--text-color);
-}
-
-header .menu-icon {
-    border: 1px solid red;
-    padding: 28px;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
-
-header .menu-icon .nav-icon {
-    background: #fff;
-    display: block;
-    height: 2px;
-    width: 18px;
-    position: relative;
-    transition: background 0.2s ease-out;
-}
-
-header .menu-icon .nav-icon::before {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: 5px;
-}
-
-header .menu-icon .nav-icon::after {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: -5px;
-}
-
-header .menu-btn {
-    display: none;
 }
 
 .profile {
