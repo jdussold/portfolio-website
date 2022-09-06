@@ -123,6 +123,7 @@ header {
 nav {
     position: absolute;
     text-align: right;
+    z-indes: 99;
     top: 100%;
     right: 0;
     background: #6aa9bc;
