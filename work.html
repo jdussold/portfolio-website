@@ -1,117 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>John Dussold's Work</title>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header class="page-header">
-            <!-- Header including the logo and main navigation -->
-            <a href="index.html">
-                <img src="img/john-dussold-logo.svg" alt="Personal logo of John Dussold, a text logo that consists of my name." class="logo">
-            </a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" aria-label="About Me" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" aria-label="My Work" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" aria-label="Contact Me" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-        </header>
-        <div class="border">
-            <!-- container for animated header border -->
-            <p></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Dussold's Work</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- Header including the logo and main navigation -->
+      <a href="index.html">
+        <img
+          src="img/john-dussold-logo.svg"
+          alt="Personal logo of John Dussold, a text logo that consists of my name."
+          class="logo"
+        />
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              aria-label="About Me"
+              role="menuitem"
+              class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              aria-label="My Work"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              aria-label="Contact Me"
+              role="menuitem"
+              class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <div class="border">
+      <!-- container for animated header border -->
+      <p></p>
+    </div>
+
+    <!-- Main content -->
+    <section class="work-header">
+      <h1>Work</h1>
+      <div class="project-grid">
+        <!-- Grid items will live here -->
+        <div class="project-grid__item">
+          <h2>Pokédex</h2>
+          <a
+            href="https://jdussold.github.io/pokedex"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="./img/pokedex.png"
+              alt="Pokédex entry"
+              class="project-image"
+            />
+          </a>
+          <p class="project-description">
+            A small web application created with HTML, CSS, and JavaScript that
+            loads data from an external API and enables the viewing of data
+            points in detail.
+          </p>
+          <a
+            href="https://github.com/jdussold/pokedex"
+            target="_blank"
+            rel="noopener"
+            >See project on Github</a
+          >
         </div>
+        <div class="project-grid__item">
+          <h2>Movie Api</h2>
+          <a
+            href="https://github.com/jdussold/movie_api"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="./img/movie-api.png"
+              alt="movie api entry"
+              class="project-image"
+            />
+          </a>
+          <p class="project-description">
+            This API provides users with access to information about different
+            movies, directors, and genres. Users are able to register and update
+            their personal information as well as create and edit a list of
+            their favorite movies.
+          </p>
+          <a
+            href="https://github.com/jdussold/movie_api"
+            target="_blank"
+            rel="noopener"
+            >See project on Github</a
+          >
+        </div>
+        <div class="project-grid__item">
+          <h2>Work Example 3</h2>
+          <p>Insert short project description</p>
+          <a href="#">See project on Github</a>
+        </div>
+        <div class="project-grid__item">
+          <h2>Meet App</h2>
+          <a
+            href="https://jdussold.github.io/meet"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="./img/meet-app.png"
+              alt="meet app entry"
+              class="project-image"
+            />
+          </a>
+          <p>
+            This is a serverless progressive web application (PWA) built with
+            React using test-driven development (TDD). This app allows users to
+            filter events by city, view event details, specify the number of
+            events to view, use the app offline, and see data visualizations of
+            upcoming events.
+          </p>
+          <a
+            href="https://github.com/jdussold/meet"
+            target="_blank"
+            rel="noopener"
+            >See project on Github</a
+          >
+        </div>
+        <div class="project-grid__item">
+          <h2>Work Example 5</h2>
+          <p>Insert short project description</p>
+          <a href="#">See project on Github</a>
+        </div>
+        <div class="project-grid__item">
+          <h2>myFlix</h2>
+          <a
+            href="https://myflix-jd.netlify.app"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="./img/myFlix.png"
+              alt="movie api entry"
+              class="project-image"
+            />
+          </a>
+          <p class="project-description">
+            This project is a client-side application built using React, that
+            connects to an existing server-side codebase (REST API and database)
+            for an application called myFlix. The goal is to create a polished,
+            responsive, single-page application with routing and rich
+            interactions, providing a seamless user experience for movie
+            enthusiasts.
+          </p>
+          <a
+            href="https://github.com/jdussold/myFlix-client"
+            target="_blank"
+            rel="noopener"
+            >See project on Github</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/jdussold" target="_blank" rel="noopener">
+          <!-- Github logo -->
+          <img width="30" height="30" src="img/github_icon.svg" alt="Github" />
+        </a>
+        <a
+          href="https://twitter.com/JohnDussold"
+          target="_blank"
+          rel="noopener"
+        >
+          <!-- Twitter logo-->
+          <img
+            width="30"
+            height="30"
+            src="img/twitter_icon.svg"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/john-dussold/"
+          target="_blank"
+          rel="noopener"
+        >
+          <!--Linkedin logo-->
+          <img
+            width="30"
+            height="30"
+            src="img/linkedin_icon.svg"
+            alt="Linkedin"
+          />
+        </a>
+      </div>
+    </footer>
 
-        <!-- Main content -->
-        <section class="work-header">
-            <h1>Work</h1>
-            <div class="project-grid">
-                <!-- Grid items will live here -->
-                <div class="project-grid__item">
-                    <h2>Work Example 1</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-                <div class="project-grid__item">
-                    <h2>Work Example 2</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-                <div class="project-grid__item">
-                    <h2>Work Example 3</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-                <div class="project-grid__item">
-                    <h2>Work Example 4</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-                <div class="project-grid__item">
-                    <h2>Work Example 5</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-                <div class="project-grid__item">
-                    <h2>Work Example 6</h2>
-                    <p>
-                        Insert short project description
-                    </p>
-                    <a href="#">See project on Github</a>
-                </div>
-            </div>
-        </section>
-        <!-- Footer with links to social media profiles -->
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/jdussold" target="_blank">
-                    <!-- Github logo -->
-                    <img width="30" height="30" src="img/github_icon.svg" alt="Github">
-                </a>
-                <a href="https://twitter.com/JohnDussold" target="_blank">
-                    <!-- Twitter logo-->
-                    <img width="30" height="30" src="img/twitter_icon.svg" alt="Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/john-dussold/" target="_blank">
-                    <!--Linkedin logo-->
-                    <img width="30" height="30" src="img/linkedin_icon.svg" alt="Linkedin">
-                </a>
-            </div>
-        </footer>
-
-        <script src="js/tota11y.min.js"></script>
-            
-    </body>
-
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
