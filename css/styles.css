@@ -667,20 +667,24 @@ nav {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 750px) {
   .project-grid {
     grid-template-columns: 1fr;
   }
-}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
   .project-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .project-grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
   }
 }
 
-@media all and (max-width: 750px) {
+@media only screen and (min-width: 751px) and (max-width: 1150px) {
   .project-grid {
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
 
