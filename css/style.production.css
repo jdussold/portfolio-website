@@ -16,9 +16,9 @@ Frame color (Black): #000
 
 :root {
   --background-color: #6aa9bc;
-  --primary-color: #fff;
-  --nav-items-color: #fff;
-  --button-text-color: #fff;
+  --primary-color: #f2f4f6;
+  --nav-items-color: #f2f4f6;
+  --button-text-color: #f2f4f6;
   --link-color: #0bc6e3;
   --text-color: #000;
   --font-size-1: 1rem;
@@ -779,6 +779,9 @@ nav {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     background-color: var(--background-color);
     color: var(--primary-color);
     border: 2px solid #000;
@@ -786,6 +789,16 @@ nav {
     width: auto;
     min-height: auto;
     margin: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-grid__item:hover {
+    background-color: #4c93a9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .project-grid__item a {
