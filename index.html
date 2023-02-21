@@ -1,76 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>John Dussold - Portfolio</title>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header class="page-header-home">
-            <!-- Header including the logo and main navigation -->
-            <a href="index.html">
-                <img src="img/john-dussold-logo.svg" alt="Personal logo of John Dussold, a text logo that consists of my name." class="logo">
-            </a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" aria-label="About Me" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" aria-label="My Work" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" aria-label="Contact Me" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-        </header>
-        <div class="border-home">
-            <!-- container for animated header border -->
-            <p></p>
-        </div>
-        <div class="profile">
-            <!-- Portrait image here -->
-            <img src="img/portrait.svg" class="profile-portrait" alt="Illustrated profile image of John Dussold">
-            <h1><br>Welcome.</h1>
-            <p class="introduction">
-                My name is John Dussold.  I am a web developer from the United States.
-            </p>
-            <div class="work-button">
-                <a href="work.html" class="button1">My Work</a>
-            </div>
-        </div>
-        <footer class="page-footer-home">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/jdussold" target="_blank">
-                    <!-- Github logo -->
-                    <img width="30" height="30" src="img/github_icon.svg" alt="Github">
-                </a>
-                <a href="https://twitter.com/JohnDussold" target="_blank">
-                    <!-- Twitter logo-->
-                    <img width="30" height="30" src="img/twitter_icon.svg" alt="Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/john-dussold/" target="_blank">
-                    <!--Linkedin logo-->
-                    <img width="30" height="30" src="img/linkedin_icon.svg" alt="Linkedin">
-                </a>
-            </div>
-        </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Dussold - Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header-home">
+      <!-- Header including the logo and main navigation -->
+      <a href="index.html">
+        <img
+          src="img/john-dussold-logo.svg"
+          alt="Personal logo of John Dussold, a text logo that consists of my name."
+          class="logo"
+        />
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="about.html"
+              aria-label="About Me"
+              role="menuitem"
+              class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              aria-label="My Work"
+              role="menuitem"
+              class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              aria-label="Contact Me"
+              role="menuitem"
+              class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <div class="border-home">
+      <!-- container for animated header border -->
+      <p></p>
+    </div>
+    <div class="profile">
+      <!-- Portrait image here -->
+      <img
+        src="img/portrait.svg"
+        class="profile-portrait"
+        alt="Illustrated profile image of John Dussold"
+      />
+      <h1><br />Welcome.</h1>
+      <p class="introduction">
+        My name is John Dussold. I am a web developer from the United States.
+      </p>
+      <div class="work-button">
+        <a href="work.html" class="button1">My Work</a>
+      </div>
+    </div>
+    <footer class="page-footer-home">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/jdussold" target="_blank" rel="noopener">
+          <!-- Github logo -->
+          <img width="30" height="30" src="img/github_icon.svg" alt="Github" />
+        </a>
+        <a
+          href="https://twitter.com/JohnDussold"
+          target="_blank"
+          rel="noopener"
+        >
+          <!-- Twitter logo-->
+          <img
+            width="30"
+            height="30"
+            src="img/twitter_icon.svg"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/john-dussold/"
+          target="_blank"
+          rel="noopener"
+        >
+          <!--Linkedin logo-->
+          <img
+            width="30"
+            height="30"
+            src="img/linkedin_icon.svg"
+            alt="Linkedin"
+          />
+        </a>
+      </div>
+    </footer>
 
-        <script src="js/tota11y.min.js"></script>
-        
-    </body>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
