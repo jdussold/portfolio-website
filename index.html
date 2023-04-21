@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,17 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   </head>
   <body>
     <header class="page-header-home">
       <!-- Header including the logo and main navigation -->
-      <a href="index.html">
-        <img
-          src="img/john-dussold-logo.svg"
-          alt="Personal logo of John Dussold, a text logo that consists of my name."
-          class="logo"
-        />
+      <a href="index.html" class="logo-link">
+        <h1 class="logo-text">John Dussold</h1>
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav>
@@ -81,16 +77,20 @@
         class="profile-portrait"
         alt="Illustrated profile image of John Dussold"
       />
-      <h1><br />Welcome.</h1>
-      <p class="introduction">
-        My name is John Dussold. I am a web developer from the United States.
-      </p>
-      <div class="work-button">
-        <a href="work.html" class="button1">My Work</a>
+      <div class="welcome-message">
+        <h1>Welcome.</h1>
+        <p class="introduction">
+          Hi, I'm John Dussold - a web designer and developer with a passion for
+          creating visually stunning websites. Let's work together to build
+          something amazing!
+        </p>
+        <div class="work-button-container">
+          <a href="work.html" class="button1">My Work</a>
+        </div>
       </div>
     </div>
     <footer class="page-footer-home">
-      <p>Find me on</p>
+      <p class="find-me-on">Find me on</p>
       <div class="social-media">
         <a href="https://github.com/jdussold" target="_blank" rel="noopener">
           <!-- Github logo -->
@@ -124,7 +124,5 @@
         </a>
       </div>
     </footer>
-
-    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
