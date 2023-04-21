@@ -368,9 +368,9 @@
 
       .cls-95 {
         fill: url(#linear-gradient);
-        stroke: #000;
+        stroke: #fff;
         stroke-miterlimit: 10;
-        stroke-width: 3px;
+        stroke-width: 5px;
       }
 
       .cls-54 {
