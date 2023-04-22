@@ -45,7 +45,6 @@ body {
   );
   background: -o-linear-gradient(top, #1f2938, #0b0c0f);
   background: linear-gradient(to bottom, #1f2938, #0b0c0f);
-  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
